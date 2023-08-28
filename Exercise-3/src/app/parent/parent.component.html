@@ -1,0 +1,9 @@
+<h2>Parent Component</h2>
+    <p>Parent Data: {{ parentData }}</p>
+    <app-child [childData]="parentData"></app-child>
+    <app-child [childData]="parentData"></app-child>
+    
+    <app-child1 (dataToParent)="receiveDataFromChild1($event)"></app-child1>
+    <app-child2 (dataToParent)="receiveDataFromChild2($event)"></app-child2>
+    <p>Data from Child 1: {{ dataFromChild1 }}</p>
+    <p>Data from Child 2: {{ dataFromChild2 }}</p>
