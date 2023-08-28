@@ -9,6 +9,6 @@ export class ChildComponent {
   @Input() item: string;
 
   constructor() {
-    this.item = 'Vipul';  //fix the bug
+    this.item = 42;  // <-- Intentional type error: assigning a number to a string input
   }
 }
