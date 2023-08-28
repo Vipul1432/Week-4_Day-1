@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
-  @Input() item: string;
+ @Input() item: string;
 
   constructor() {
-    this.item = 42;  // <-- Intentional type error: assigning a number to a string input
+    this.item = 'Vipul';  // <-- Fix bug
   }
 }
